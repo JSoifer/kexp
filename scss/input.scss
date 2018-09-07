@@ -2,24 +2,29 @@
 //Mixins
 @mixin navStyle {
   flex-direction: row;
-  align-items: center;
+  align-content: center;
   justify-content: space-between;
 
 }
 
+@mixin contentRow {
+  flex-direction: row;
+  margin-left: 10px;
+}
 
 
-* {
-  box-sizing: border-box;
+ * {
+   box-sizing: border-box;
 }
 
 nav {
   ul {
+    @include navStyle;
     list-style: none;
   }
   li {
     display: inline-block;
-    flex-direction: row;
+    //flex-direction: row;
   }
 
 }
@@ -28,20 +33,42 @@ nav {
 .flex {
   display: flex;
 }
+
 .main-header {
   height: 11.7rem;
   flex-direction: row;
   width: 100%;
   //background-image: url("cover_art.png");
   background-color: lightGrey;
+  position: relative;
+  justify-content: space-between;
 
 }
 .player {
   justify-content: center;
   margin-top: 20px;
 }
-.playlist {
-  float: right;
+.lower-header {
+  flex-direction: row;
+}
+.beneath-header {
+  top: 18rem;
+  align-items: center;
+}
+.main-content {
+  top: 18rem;
+  flex-direction: column;
+  position: relative;
+}
+.mc-row-one {
+  @include contentRow;
+}
+.mc-row-two {
+  @include contentRow;
+}
+#playlist {
+  margin-top: 20px;
+  margin-right: 5px;
 }
 
 #cover_art {
