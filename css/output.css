@@ -4,6 +4,7 @@
 
 nav ul {
   flex-direction: row;
+  align-content: center;
   justify-content: space-between;
   top: 120px;
   list-style: none;
@@ -16,6 +17,11 @@ nav li {
   display: flex;
 }
 
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
 .main-header {
   height: 11.7rem;
   flex-direction: row;
@@ -23,16 +29,25 @@ nav li {
   max-width: 1440;
   background-color: lightGrey;
   position: relative;
+  justify-content: space-between;
 }
 
 .player {
   margin-top: 20px;
   display: block;
   padding: 5px;
+  top: 1.5rem;
+  left: 7rem;
 }
 
 .upper-header {
   flex-direction: row;
+}
+
+.upper-header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .lower-header {
@@ -41,6 +56,7 @@ nav li {
 }
 
 .beneath-header {
+  display: inline-block;
   flex-direction: row;
   top: 12rem;
   justify-content: space-around;
@@ -49,7 +65,7 @@ nav li {
 
 .main-content {
   top: 18rem;
-  width: inherit;
+  width: 100%;
   flex-direction: column;
   position: relative;
 }
@@ -58,16 +74,24 @@ nav li {
   flex-direction: row;
   margin-left: 10px;
   margin-bottom: 10px;
+  max-width: 1440px;
+  width: 75%;
 }
 
 .mc-row-two {
   flex-direction: row;
   margin-left: 10px;
   margin-bottom: 10px;
+  max-width: 1440px;
+  width: 75%;
 }
 
 .media-card {
-  width: 25%;
+  width: 500px;
+}
+
+.sidebar {
+  max-width: 300px;
 }
 
 #playlist {
@@ -89,6 +113,9 @@ nav li {
 
 #play-circle {
   font-size: 60px;
+  left: 35px;
+  top: auto;
+  bottom: auto;
 }
 
 #logo {

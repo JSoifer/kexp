@@ -2,7 +2,7 @@
 //Mixins
 @mixin navStyle {
   flex-direction: row;
-  //align-content: center;
+  align-content: center;
   justify-content: space-between;
   top: 120px;
 
@@ -12,6 +12,8 @@
   flex-direction: row;
   margin-left: 10px;
   margin-bottom: 10px;
+  max-width: 1440px;
+  width: 75%;
 }
 
 
@@ -35,7 +37,10 @@ nav {
 .flex {
   display: flex;
 }
-
+.container {
+  width: 100%;
+  padding: 20px;
+}
 .main-header {
   height: 11.7rem;
   flex-direction: row;
@@ -44,16 +49,23 @@ nav {
   //background-image: url("cover_art.png");
   background-color: lightGrey;
   position: relative;
-  //justify-content: space-between;
+  justify-content: space-between;
 
 }
 .player {
   margin-top: 20px;
   display: block;
   padding: 5px;
+  top: 1.5rem;
+  left: 7rem;
 }
 .upper-header {
   flex-direction: row;
+}
+.upper-header::after {
+  content: "";
+  display:table;
+  clear:both;
 }
 .lower-header {
   top: 8rem;
@@ -61,7 +73,7 @@ nav {
 }
 
 .beneath-header {
-  //display: inline-block;
+  display: inline-block;
   flex-direction: row;
   top: 12rem;
   justify-content: space-around;
@@ -69,7 +81,7 @@ nav {
 }
 .main-content {
   top: 18rem;
-  width:inherit;
+  width:100%;
   flex-direction: column;
   position: relative;
 }
@@ -80,8 +92,13 @@ nav {
   @include contentRow;
 }
 .media-card {
-  width: 25%
+  width: 500px;
 }
+
+.sidebar {
+    max-width: 300px;
+}
+
 #playlist {
   float:right;
   margin-top: 20px;
@@ -100,6 +117,9 @@ nav {
 
 #play-circle {
   font-size: 60px;
+  left: 35px;
+  top: auto;
+  bottom: auto;
 }
 
 #logo {
