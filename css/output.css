@@ -10,6 +10,7 @@ nav ul {
   list-style: none;
 }
 nav li {
+  display: inline-block;
   flex-direction: row;
 }
 
@@ -44,15 +45,10 @@ nav li {
   flex-direction: row;
 }
 
-.upper-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .lower-header {
   top: 8rem;
   flex-direction: row;
+  clear: both;
 }
 
 .beneath-header {
