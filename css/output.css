@@ -4,12 +4,12 @@
 
 nav ul {
   flex-direction: row;
-  align-content: center;
   justify-content: space-between;
+  top: 120px;
   list-style: none;
 }
 nav li {
-  display: inline-block;
+  flex-direction: row;
 }
 
 .flex {
@@ -20,27 +20,36 @@ nav li {
   height: 11.7rem;
   flex-direction: row;
   width: 100%;
+  max-width: 1440;
   background-color: lightGrey;
   position: relative;
-  justify-content: space-between;
 }
 
 .player {
-  justify-content: center;
   margin-top: 20px;
+  display: block;
+  padding: 5px;
+}
+
+.upper-header {
+  flex-direction: row;
 }
 
 .lower-header {
+  top: 8rem;
   flex-direction: row;
 }
 
 .beneath-header {
-  top: 18rem;
-  align-items: center;
+  flex-direction: row;
+  top: 12rem;
+  justify-content: space-around;
+  height: 75px;
 }
 
 .main-content {
   top: 18rem;
+  width: inherit;
   flex-direction: column;
   position: relative;
 }
@@ -48,15 +57,28 @@ nav li {
 .mc-row-one {
   flex-direction: row;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .mc-row-two {
   flex-direction: row;
   margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.media-card {
+  width: 25%;
 }
 
 #playlist {
+  float: right;
   margin-top: 20px;
+  margin-right: 5px;
+}
+
+#search {
+  float: right;
+  margin-top: 60px;
   margin-right: 5px;
 }
 

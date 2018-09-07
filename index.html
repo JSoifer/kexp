@@ -2,35 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/output.css">
     <title>KEXP</title>
   </head>
   <body>
     <div class="container flex">
       <div class="main-header flex">
-        <div class="upper-header">
+        <div class="upper-header flex">
           <div class="logo">
             <img id="logo" src="img/logo.jpg" alt="kexp logo">
           </div>
-          <div class="player">
+          <div class="player flex">
             <div id="play-circle">
               <i class="far fa-play-circle"></i>
             </div>
             <div class="cover-art">
               <img id="cover_art" src="img/cover_art.png" alt="cover art">
             </div>
-            <div class="now-playing">
+            <div class="now-playing flex">
               <p>NOW PLAYING</p><br>
               <p>The Midday Show with Stevie Zoom</p><br>
               <p>Anna Calvi - Wish</p><br>
               <p>HUNTER</p>
             </div>
           </div>
-          <div id="playlist">
+          <div id="playlist" class="flex">
             <p>Playlist</p>
           </div>
-          <div class="search">
+          <div id="search"class="flex">
             <i class="fas fa-search"></i>
           </div>
         </div>
@@ -38,7 +38,7 @@
 
           <div class="main-nav flex">
             <nav>
-              <ul>
+              <ul class="flex">
                 <li class="main-nav-item"><i class="fas fa-bars"></i></li>
                 <li class="main-nav-item">Menu</li>
                 <li class="main-nav-item">listen</li>
@@ -49,7 +49,7 @@
           </div>
           <div class="secondary-nav flex">
             <nav>
-            <ul>
+            <ul class="flex">
               <li class="secondary-nav-item">events</li>
               <li class="secondary-nav-item">visit kexp</li>
               <li class="secondary-nav-item">donor lounge</li>
@@ -59,21 +59,22 @@
         </div>
 
       </div>
+    </div>
+    <div class="main-content flex">
       <div class="beneath-header flex">
         <h2>Independent. Listener-powered.</h2>
         <h2>Make a Gift of Support.</h2>
       </div>
-      <div class="main-content flex">
-        <div class="mc-row-one flex">
-          <div class="media-card">
-            <img src="img/andrewwk.jpg" alt="Andrew W.K.">
-          </div>
-          <div class="media-card">
-            <img src="img/alien_boy.jpg" alt="Alien Boy">
-          </div>
-          <div class="media-card">
-            <img src="img/gibbard_sq_plain.jpg" alt="Ben Gibbard Live">
-          </div>
+      <div class="mc-row-one flex">
+        <div class="media-card">
+          <img src="img/andrewwk.jpg" alt="Andrew W.K.">
+        </div>
+        <div class="media-card">
+          <img src="img/alien_boy.jpg" alt="Alien Boy">
+        </div>
+        <div class="media-card">
+          <img src="img/gibbard_sq_plain.jpg" alt="Ben Gibbard Live">
+        </div>
 
         </div>
         <div class="mc-row-two flex">
@@ -108,7 +109,6 @@
 
 
       </div>
-
     </div>
 
   </body>
