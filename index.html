@@ -2,45 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="css/output.css">
     <title>KEXP</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div class="container flex">
+      <header class="flex">
         <div class="logo">
+        <img id="logo" src="img/logo.jpg" alt="kexp logo">
 
         </div>
         <div class="player">
-          <a href="play/pause"></a>
+          <i class="far fa-play-circle"></i>
           <div class="cover-art">
 
           </div>
           <div class="now-playing">
-            <p></p>
-            <p></p>
+            <p>NOW PLAYING</p><br>
+            <p>The Midday Show with Stevie Zoom</p><br>
+            <p>Anna Calvi - Wish</p><br>
+            <p>HUNTER</p>
           </div>
-        <div class="playlist">
-
+        <div class="playlist flex">
+          <p>Playlist</p>
         </div>
-        <div class="search">
+        <div class="search flex">
+          <i class="fas fa-search"></i>
         </div>
-        <div class="main-nav">
+        <div class="main-nav flex">
           <nav>
             <ul>
-              <li>Menu</li>
-              <li>listen</li>
-              <li>watch</li>
-              <li>read</li>
+              <li class="main-nav-item"><i class="fas fa-bars"></i></li>
+              <li class="main-nav-item">Menu</li>
+              <li class="main-nav-item">listen</li>
+              <li class="main-nav-item">watch</li>
+              <li class="main-nav-item">read</li>
             </ul>
           </nav>
         </div>
-        <div class="secondary-nav">
+        <div class="secondary-nav flex">
           <ul>
-            <li>events</li>
-            <li>visit kexp</li>
-            <li>donor lounge</li>
-            <li>donate</li>
+            <li class="secondary-nav-item">events</li>
+            <li class="secondary-nav-item">visit kexp</li>
+            <li class="secondary-nav-item">donor lounge</li>
+            <li class="secondary-nav-item">donate</li>
           </ul>
         </div>
 
