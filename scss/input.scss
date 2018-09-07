@@ -1,11 +1,61 @@
 
+//Mixins
+@mixin navStyle {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    flex-direction: row;
+  }
+
+}
+
+
 .flex {
   display: flex;
 }
-ul {
-  list-style: none;
+.main-header {
+  height: 11.7rem;
+  flex-direction: row;
+  width: 100%;
+  //background-image: url("cover_art.png");
+  background-color: lightGrey;
+
 }
+.player {
+  justify-content: center;
+  margin-top: 20px;
+}
+.playlist {
+  float: right;
+}
+
+#cover_art {
+  height: 82.98px;
+  width: 82.98px;
+}
+
+#play-circle {
+  font-size: 60px;
+}
+
 #logo {
+  float: left;
   height: 86.4px;
   width: 64.8px;
+  border: 1px solid white;
 }
