@@ -1,58 +1,38 @@
+* {
+  box-sizing: border-box;
+}
 
-//Mixins
-@mixin navStyle {
+nav ul {
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
   top: 120px;
-
+  list-style: none;
 }
-
-@mixin contentRow {
-  z-index: 1;
+nav li {
+  display: inline-block;
   flex-direction: row;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  max-width: 1440px;
-  width: 75%;
 }
-
-
- * {
-   box-sizing: border-box;
-}
-
-nav {
-  ul {
-    @include navStyle;
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-    flex-direction: row;
-  }
-
-}
-
 
 .flex {
   display: flex;
 }
+
 .container {
   width: 100%;
   padding: 20px;
 }
+
 .main-header {
   height: 11.7rem;
   flex-direction: row;
   width: 100%;
   max-width: 1440;
-  //background-image: url("cover_art.png");
   background-color: lightGrey;
   position: relative;
   justify-content: space-between;
-
 }
+
 .player {
   height: 25px;
   width: 140px;
@@ -62,17 +42,18 @@ nav {
   top: 1.5rem;
   left: 7rem;
 }
+
 .upper-header {
   z-index: 3;
   flex-direction: row;
-  position:relative;
+  position: relative;
 }
 
 .lower-header {
   z-index: 3;
   top: 8rem;
   flex-direction: row;
-  clear:both;
+  clear: both;
 }
 
 .beneath-header {
@@ -83,33 +64,48 @@ nav {
   justify-content: space-around;
   height: 75px;
 }
+
 .main-content {
   top: 18rem;
-  width:100%;
+  width: 100%;
   flex-direction: column;
   position: relative;
 }
+
 .mc-row-one {
-  @include contentRow;
+  z-index: 1;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  max-width: 1440px;
+  width: 75%;
 }
+
 .mc-row-two {
-  @include contentRow;
+  z-index: 1;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  max-width: 1440px;
+  width: 75%;
 }
+
 .media-card {
   width: 500px;
 }
 
 .sidebar {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 #playlist {
-  float:right;
+  float: right;
   margin-top: 20px;
   margin-right: 5px;
 }
+
 #search {
-  float:right;
+  float: right;
   margin-top: 60px;
   margin-right: 5px;
 }
@@ -126,9 +122,11 @@ nav {
   bottom: auto;
 }
 
- #logo {
+#logo {
   float: left;
   height: 86.4px;
   width: 64.8px;
   border: 1px solid white;
 }
+
+/*# sourceMappingURL=ouput.css.map */
