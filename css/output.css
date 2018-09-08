@@ -19,70 +19,84 @@ nav li {
 }
 
 .container {
+  flex-direction: column;
   width: 100%;
   padding: 20px;
 }
 
 .main-header {
   height: 11.7rem;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   max-width: 1440;
   background-color: lightGrey;
   position: relative;
-  justify-content: space-between;
 }
 
 .player {
+  flex-direction: column;
+  height: 25px;
+  width: 140px;
   margin-top: 20px;
   display: block;
   padding: 5px;
-  top: 1.5rem;
-  left: 7rem;
 }
 
 .upper-header {
+  z-index: 3;
   flex-direction: row;
+  position: relative;
 }
 
 .lower-header {
+  z-index: 3;
   top: 8rem;
+  align-items: center;
   flex-direction: row;
   clear: both;
 }
 
 .beneath-header {
-  display: inline-block;
+  z-index: 2;
   flex-direction: row;
-  top: 12rem;
-  justify-content: space-around;
+  top: 11.7rem;
+  align-items: center;
+  justify-content: center;
   height: 75px;
 }
 
 .main-content {
-  top: 18rem;
+  top: 14rem;
   width: 100%;
   flex-direction: column;
   position: relative;
 }
 
 .mc-row-one {
+  z-index: 1;
+  justify-content: center;
   flex-direction: row;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  padding: 10px;
   max-width: 1440px;
   width: 75%;
 }
 
 .mc-row-two {
+  z-index: 1;
+  justify-content: center;
   flex-direction: row;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  padding: 10px;
   max-width: 1440px;
   width: 75%;
 }
 
 .media-card {
+  padding: 10px;
+  width: 500px;
+}
+.media-card img {
+  position: relative;
+  height: 225px;
   width: 500px;
 }
 
@@ -119,6 +133,12 @@ nav li {
   height: 86.4px;
   width: 64.8px;
   border: 1px solid white;
+}
+
+#logo::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*# sourceMappingURL=output.css.map */

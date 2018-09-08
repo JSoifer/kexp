@@ -10,9 +10,9 @@
 
 @mixin contentRow {
   z-index: 1;
+  justify-content: center;
   flex-direction: row;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  padding: 10px;
   max-width: 1440px;
   width: 75%;
 }
@@ -39,28 +39,30 @@ nav {
   display: flex;
 }
 .container {
+  flex-direction: column;
   width: 100%;
   padding: 20px;
 }
 .main-header {
   height: 11.7rem;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   max-width: 1440;
   //background-image: url("cover_art.png");
   background-color: lightGrey;
   position: relative;
-  justify-content: space-between;
+  //justify-content: space-between;
 
 }
 .player {
+  flex-direction: column;
   height: 25px;
   width: 140px;
   margin-top: 20px;
   display: block;
   padding: 5px;
-  top: 1.5rem;
-  left: 7rem;
+  //top: 1.5rem;
+  //left: 7rem;
 }
 .upper-header {
   z-index: 3;
@@ -71,20 +73,22 @@ nav {
 .lower-header {
   z-index: 3;
   top: 8rem;
+  align-items: center;
   flex-direction: row;
   clear:both;
 }
 
 .beneath-header {
   z-index: 2;
-  display: inline-block;
+  //display: inline-block;
   flex-direction: row;
-  top: 12rem;
-  justify-content: space-around;
+  top: 11.7rem;
+  align-items: center;
+  justify-content: center;
   height: 75px;
 }
 .main-content {
-  top: 18rem;
+  top: 14rem;
   width:100%;
   flex-direction: column;
   position: relative;
@@ -96,7 +100,13 @@ nav {
   @include contentRow;
 }
 .media-card {
+  padding: 10px;
   width: 500px;
+  img {
+    position: relative;
+    height: 225px;
+    width: 500px;
+  }
 }
 
 .sidebar {
@@ -131,4 +141,9 @@ nav {
   height: 86.4px;
   width: 64.8px;
   border: 1px solid white;
+}
+#logo::after {
+  content: "";
+  display: block;
+  clear: both;
 }
