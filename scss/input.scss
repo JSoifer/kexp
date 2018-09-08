@@ -1,109 +1,14 @@
-
-//Mixins
-@mixin navStyle {
-  //flex-direction: row;
-  //align-content: center;
-  //justify-content: space-between;
-  top: 120px;
-
+.main-header {
+  display: flex;
+  flex-direction: column;
+  height: 11.7rem;
 }
-
-@mixin contentRow {
-  z-index: 1;
-  justify-content: space-between;
-  //flex-direction: row;
-  padding: 10px;
-  max-width: 1440px;
-  width: 75%;
-}
-
-
- * {
-   box-sizing: border-box;
-}
-
-nav {
-  ul {
-    @include navStyle;
-    list-style: none;
-  }
-  ul li{
-    margin: auto 10px;
-  }
-}
-
-
-.flex {
+.upper-header {
   display: flex;
 }
-.positioner {
-  max-width: 970px;
-  margin: 0 auto;
-}
-.container {
-  //flex-direction: column;
-  width: 100%;
-  padding: 20px;
-}
-.main-header {
-  height: 11.7rem;
-  width: 100%;
-  //background-image: url("cover_art.png");
-  background-color: lightGrey;
-  position: relative;
-  //justify-content: space-between;
-
-}
-.player {
-  //flex-direction: row;
-  //align-items: center;
-  height: 80px;
-  width: 300px;
-  margin-left: 7rem;
-  display: block;
-  padding: 5px;
-}
-
-.upper-header {
-  z-index: 3;
-}
-
 .lower-header {
-  z-index: 3;
-  top: 8rem;
-  //align-items: center;
-}
-
-.beneath-header {
-  z-index: 2;
-  top: 11.7rem;
-  //justify-content: center;
-  height: 75px;
-}
-.main-content {
-  top: 13rem;
-  width:100%;
-  //position: relative;
-  .mc-row-one {
-    @include contentRow;
-  }
-  .mc-row-two {
-    @include contentRow;
-  }
-}
-
-.media-card {
-  padding: 10px;
-  width: 500px;
-  img {
-    position: relative;
-    height: 225px;
-    width: 400px;
-  }
-}
-
-.sidebar {
-    max-width: 300px;
+  display: flex;
+  
 }
 
 #playlist {
@@ -128,13 +33,8 @@ nav {
 }
 
  #logo {
-  float: left;
+  //float: left;
   height: 86.4px;
   width: 64.8px;
   border: 1px solid white;
-}
-#logo::after {
-  content: "";
-  display: block;
-  clear: both;
 }
