@@ -1,17 +1,17 @@
 
 //Mixins
 @mixin navStyle {
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
+  //flex-direction: row;
+  //align-content: center;
+  //justify-content: space-between;
   top: 120px;
 
 }
 
 @mixin contentRow {
   z-index: 1;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
+  //flex-direction: row;
   padding: 10px;
   max-width: 1440px;
   width: 75%;
@@ -27,27 +27,27 @@ nav {
     @include navStyle;
     list-style: none;
   }
-  li {
-    display: inline-block;
-    flex-direction: row;
+  ul li{
+    margin: auto 10px;
   }
-
 }
 
 
 .flex {
   display: flex;
 }
+.positioner {
+  max-width: 970px;
+  margin: 0 auto;
+}
 .container {
-  flex-direction: column;
+  //flex-direction: column;
   width: 100%;
   padding: 20px;
 }
 .main-header {
   height: 11.7rem;
-  flex-direction: column;
   width: 100%;
-  max-width: 1440;
   //background-image: url("cover_art.png");
   background-color: lightGrey;
   position: relative;
@@ -55,57 +55,50 @@ nav {
 
 }
 .player {
-  flex-direction: column;
-  height: 25px;
-  width: 140px;
-  margin-top: 20px;
+  //flex-direction: row;
+  //align-items: center;
+  height: 80px;
+  width: 300px;
+  margin-left: 7rem;
   display: block;
   padding: 5px;
-  //top: 1.5rem;
-  //left: 7rem;
 }
+
 .upper-header {
   z-index: 3;
-  flex-direction: row;
-  position:relative;
 }
 
 .lower-header {
   z-index: 3;
   top: 8rem;
-  align-items: center;
-  flex-direction: row;
-  clear:both;
+  //align-items: center;
 }
 
 .beneath-header {
   z-index: 2;
-  //display: inline-block;
-  flex-direction: row;
   top: 11.7rem;
-  align-items: center;
-  justify-content: center;
+  //justify-content: center;
   height: 75px;
 }
 .main-content {
-  top: 14rem;
+  top: 13rem;
   width:100%;
-  flex-direction: column;
-  position: relative;
+  //position: relative;
+  .mc-row-one {
+    @include contentRow;
+  }
+  .mc-row-two {
+    @include contentRow;
+  }
 }
-.mc-row-one {
-  @include contentRow;
-}
-.mc-row-two {
-  @include contentRow;
-}
+
 .media-card {
   padding: 10px;
   width: 500px;
   img {
     position: relative;
     height: 225px;
-    width: 500px;
+    width: 400px;
   }
 }
 
@@ -114,14 +107,12 @@ nav {
 }
 
 #playlist {
-  float:right;
-  margin-top: 20px;
-  margin-right: 5px;
+  top: 20px;
+  right: 5px;
 }
 #search {
-  float:right;
-  margin-top: 60px;
-  margin-right: 5px;
+  top: 60px;
+  right: 5px;
 }
 
 #cover_art {

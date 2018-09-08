@@ -8,22 +8,22 @@
   </head>
   <body>
     <div class="container flex">
-      <div class="main-header flex">
+      <div class="main-header flex positioner">
         <div class="upper-header flex">
           <div class="logo">
             <img id="logo" src="img/logo.jpg" alt="kexp logo">
           </div>
           <div class="player flex">
-            <div id="play-circle">
+            <div id="play-circle" class="player-component">
               <i class="far fa-play-circle"></i>
             </div>
             <div class="cover-art">
-              <img id="cover_art" src="img/cover_art.png" alt="cover art">
+              <img id="cover_art" class="player-component" src="img/cover_art.png" alt="cover art">
             </div>
-            <div class="now-playing flex">
-              <p>NOW PLAYING</p><br>
-              <p>The Midday Show with Stevie Zoom</p><br>
-              <p>Anna Calvi - Wish</p><br>
+            <div id="now-playing" class="player-component">
+              <p>NOW PLAYING</p>
+              <p>The Midday Show with Stevie Zoom</p>
+              <p>Anna Calvi - Wish</p>
               <p>HUNTER</p>
             </div>
           </div>
@@ -60,7 +60,7 @@
 
       </div>
     </div>
-    <div class="main-content flex">
+    <div class="main-content flex positioner">
       <div class="beneath-header flex">
         <h2>Independent. Listener-powered.</h2>
         <h2>Make a Gift of Support.</h2>
