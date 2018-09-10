@@ -11,7 +11,9 @@
   display: flex;
   flex-direction: column;
   height: 11.7rem;
-  background: url("img/cover_art.jpg") no-repeat center center fixed;
+  background-image: url("img/cover_art.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: grey;
 }
@@ -91,18 +93,12 @@ li {
 }
 
 .sidebar {
-  float: right;
   display: flex;
+  flex-direction: column;
 }
 .sidebar img {
   height: 80px;
   width: 80px;
-}
-
-.sidebar::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 #now-playing {

@@ -2,7 +2,9 @@
 
 //mixins
 @mixin header-background {
-  background: url("img/cover_art.jpg") no-repeat center center fixed;
+  background-image: url("img/cover_art.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -90,19 +92,12 @@
   justify-content: space-around;
 }
 .sidebar {
-  float: right;
   display: flex;
+  flex-direction: column;
   img {
     height: 80px;
     width: 80px;
   }
-}
-
-
-.sidebar::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 #now-playing {
