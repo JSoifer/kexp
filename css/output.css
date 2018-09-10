@@ -67,6 +67,10 @@ li {
   flex-direction: column;
 }
 
+.mc-sub {
+  display: flex;
+}
+
 .mc-column {
   display: flex;
   flex-direction: column;
