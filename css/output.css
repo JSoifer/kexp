@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
   height: 11.7rem;
+  background: url("img/cover_art.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: grey;
 }
 
 .upper-header {
@@ -19,19 +22,26 @@
 }
 
 .player {
+  padding-top: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: center;
+}
+
+.player-component {
+  max-height: 80px;
 }
 
 .lower-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .main-nav nav ul {
   display: flex;
   list-style: none;
+  align-content: center;
 }
 
 li {
@@ -41,11 +51,54 @@ li {
 .secondary-nav ul {
   display: flex;
   list-style: none;
+  margin-right: 25px;
 }
 
 .beneath-header {
   display: flex;
-  align-content: center;
+  justify-content: center;
+}
+.beneath-header h2 {
+  margin-left: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-column {
+  display: flex;
+  flex-direction: column;
+}
+.mc-column img {
+  height: 250px;
+  width: 300px;
+}
+
+.mc-row-one {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mc-row-two {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar {
+  float: right;
+  display: flex;
+}
+.sidebar img {
+  height: 80px;
+  width: 80px;
+}
+
+.sidebar::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #now-playing {
@@ -54,20 +107,16 @@ li {
   padding-bottom: 30px;
 }
 
-#playlist {
-  align-self: flex-end;
-}
-
 #cover_art {
   height: 82.98px;
   width: 82.98px;
+  border: 1px solid white;
+  margin-left: 10px;
 }
 
 #play-circle {
-  font-size: 60px;
+  font-size: 70px;
   left: 35px;
-  top: auto;
-  bottom: auto;
 }
 
 #logo {
