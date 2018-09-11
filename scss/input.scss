@@ -2,10 +2,12 @@
 
 //mixins
 @mixin header-background {
+  display: block;
   background-image: url("../img/cover_art.png");
+  background-size:cover;
   background-repeat:no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center center;
+  //filter: blur(5px);
 }
 
 
@@ -14,9 +16,10 @@
 }
 
 .positioner {
-  max-width: 970px;
+  max-width: 100vw;
   margin: auto;
 }
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -25,17 +28,24 @@
   background-color: grey;
 }
 .upper-header {
-  display: flex;
-  justify-content: space-between;
-}
-.player {
-  padding-top: 5px;
+  position: relative;
   display: flex;
   justify-content: flex-start;
+}
+.player {
+  padding: 10px 100px;
+  display: flex;
   align-content: center;
 }
 .player-component {
   max-height: 80px;
+  margin-left: 5px;
+}
+.header-tools {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: white;
 }
 
 .lower-header {
@@ -53,6 +63,7 @@
 }
   li {
   margin-left: 25px;
+  color: white;
 }
 
 .secondary-nav ul {
@@ -69,18 +80,21 @@
   }
 }
 .main-content {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .mc-sub {
   display: flex;
+  justify-content: space-around;
 }
 .mc-column {
   display: flex;
   flex-direction: column;
   img {
     height: 250px;
-    width: 300px;
+    width: 320px;
   }
 }
 .mc-row-one {
@@ -95,15 +109,20 @@
   display: flex;
   flex-direction: column;
   img {
-    height: 80px;
-    width: 80px;
+    height: 220px;
+    width: 220px;
   }
 }
+.story img {
+    height: 80px;
+    width: 80px;
+}
+
 
 #now-playing {
   font-size: .85em;
-  margin-left: 10px;
-  padding-bottom: 30px;
+  margin-left: 20px;
+  color: white;
 }
 #playlist {
 
@@ -117,12 +136,13 @@
   height: 82.98px;
   width: 82.98px;
   border: 1px solid white;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 #play-circle {
   font-size: 70px;
   left: 35px;
+  color: white;
 }
 
  #logo {

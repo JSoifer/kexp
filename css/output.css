@@ -3,7 +3,7 @@
 }
 
 .positioner {
-  max-width: 970px;
+  max-width: 100vw;
   margin: auto;
 }
 
@@ -11,27 +11,36 @@
   display: flex;
   flex-direction: column;
   height: 11.7rem;
+  display: block;
   background-image: url("../img/cover_art.png");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: grey;
 }
 
 .upper-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .player {
-  padding-top: 5px;
+  padding: 10px 100px;
   display: flex;
-  justify-content: flex-start;
   align-content: center;
 }
 
 .player-component {
   max-height: 80px;
+  margin-left: 5px;
+}
+
+.header-tools {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: white;
 }
 
 .lower-header {
@@ -48,6 +57,7 @@
 
 li {
   margin-left: 25px;
+  color: white;
 }
 
 .secondary-nav ul {
@@ -65,12 +75,15 @@ li {
 }
 
 .main-content {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .mc-sub {
   display: flex;
+  justify-content: space-around;
 }
 
 .mc-column {
@@ -79,7 +92,7 @@ li {
 }
 .mc-column img {
   height: 250px;
-  width: 300px;
+  width: 320px;
 }
 
 .mc-row-one {
@@ -97,26 +110,32 @@ li {
   flex-direction: column;
 }
 .sidebar img {
+  height: 220px;
+  width: 220px;
+}
+
+.story img {
   height: 80px;
   width: 80px;
 }
 
 #now-playing {
   font-size: 0.85em;
-  margin-left: 10px;
-  padding-bottom: 30px;
+  margin-left: 20px;
+  color: white;
 }
 
 #cover_art {
   height: 82.98px;
   width: 82.98px;
   border: 1px solid white;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 #play-circle {
   font-size: 70px;
   left: 35px;
+  color: white;
 }
 
 #logo {
