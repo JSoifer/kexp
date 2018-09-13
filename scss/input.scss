@@ -1,5 +1,5 @@
 //variables
-$accent-color: #ffad33;
+$accent-color: #feac31;
 //mixins
 
 
@@ -10,7 +10,7 @@ body {
   width: 100%;
   background-color: white;
   color: white;
-  font-family: "M PLUS Rounded 1c" inherit, sans-serif;
+  font-family: proxima-nova, Helvetica, Ariel, sans-serif;
 }
 
 
@@ -28,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 11.7rem;
-  //background-color: transparant;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -43,20 +42,20 @@ body {
     .now-playing {
       margin-left: 10px;
       font-size: .85em;
+      #np-host {
+        margin-top: 0;
+      }
+      #np-artist {
+        margin-bottom: 0;
+      }
     }
   }
-}
-#np-host {
-  margin-top: 0;
-}
-#np-artist {
-  margin-bottom: 0;
-}
-.header-tools {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  color: white;
+  .header-tools {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: white;
+  }
 }
 
 .lower-header {
@@ -120,10 +119,18 @@ body {
     height: 220px;
     width: 220px;
   }
+  .featured-stories {
+    h2 {
+      background-color: $accent-color
+    }
+  }
 }
-.story img {
+.story {
+  display: flex;
+img {
     height: 80px;
     width: 80px;
+  }
 }
 
 

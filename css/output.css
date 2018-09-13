@@ -6,7 +6,7 @@ body {
   width: 100%;
   background-color: white;
   color: white;
-  font-family: "M PLUS Rounded 1c" inherit, sans-serif;
+  font-family: proxima-nova, Helvetica, Ariel, sans-serif;
 }
 
 .header-background {
@@ -40,16 +40,13 @@ body {
   margin-left: 10px;
   font-size: 0.85em;
 }
-
-#np-host {
+.upper-header .player .now-playing #np-host {
   margin-top: 0;
 }
-
-#np-artist {
+.upper-header .player .now-playing #np-artist {
   margin-bottom: 0;
 }
-
-.header-tools {
+.upper-header .header-tools {
   position: absolute;
   top: 0;
   right: 10px;
@@ -126,7 +123,13 @@ body {
   height: 220px;
   width: 220px;
 }
+.sidebar .featured-stories h2 {
+  background-color: #feac31;
+}
 
+.story {
+  display: flex;
+}
 .story img {
   height: 80px;
   width: 80px;
