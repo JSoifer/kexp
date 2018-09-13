@@ -1,19 +1,7 @@
-//variables
-$accent-color: #ffad33;
-//mixins
-@mixin header-background {
-  display: block;
-  background-image: url("../img/cover_art.png");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  //filter: blur(5px);
-}
-
-
 * {
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   background-color: white;
@@ -21,31 +9,38 @@ body {
   font-family: "M PLUS Rounded 1c" inherit, sans-serif;
 }
 
-
-
 .main-header {
   display: flex;
   flex-direction: column;
   height: 11.7rem;
-  @include header-background;
+  display: block;
+  background-image: url("../img/cover_art.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: grey;
 }
+
 .upper-header {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  .player {
-    padding: 10px 100px;
-    display: flex;
-    align-content: center;
-    .now-playing {
-      max-height: 80px;
-      margin-left: 5px;
-      font-size: .85em;
-      margin-left: 20px;
-    }
-  }
 }
+.upper-header .player {
+  padding: 10px 100px;
+  display: flex;
+  align-content: center;
+}
+.upper-header .player .player-component {
+  max-height: 80px;
+  margin-left: 5px;
+}
+.upper-header .player .player-component #now-playing {
+  font-size: 0.85em;
+  margin-left: 20px;
+  color: white;
+}
+
 .header-tools {
   position: absolute;
   top: 0;
@@ -58,75 +53,75 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .main-nav nav ul {
-    display: flex;
-    list-style: none;
-    align-content: center;
-    li {
-      margin-left: 25px;
-    }
+  display: flex;
+  list-style: none;
+  align-content: center;
+}
+
+li {
+  margin-left: 25px;
+  color: white;
 }
 
 .secondary-nav ul {
   display: flex;
   list-style: none;
   margin-right: 25px;
-  li {
-    margin-left: 25px;
-  }
 }
+
 .beneath-header {
   display: flex;
   justify-content: center;
-  h2 {
-    margin-left: 10px;
-  }
 }
+.beneath-header h2 {
+  margin-left: 10px;
+}
+
 .main-content {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .mc-sub {
   display: flex;
   justify-content: space-around;
 }
+
 .mc-column {
   display: flex;
   flex-direction: column;
-  img {
-    height: 250px;
-    width: 320px;
-  }
 }
+.mc-column img {
+  height: 250px;
+  width: 320px;
+}
+
 .mc-row-one {
   display: flex;
   justify-content: space-around;
 }
+
 .mc-row-two {
   display: flex;
   justify-content: space-around;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  img {
-    height: 220px;
-    width: 220px;
-  }
 }
+.sidebar img {
+  height: 220px;
+  width: 220px;
+}
+
 .story img {
-    height: 80px;
-    width: 80px;
-}
-
-
-#playlist {
-
-
-}
-#search {
-
+  height: 80px;
+  width: 80px;
 }
 
 #cover_art {
@@ -142,8 +137,10 @@ body {
   color: white;
 }
 
- #logo {
+#logo {
   height: 86.4px;
   width: 64.8px;
   border: 1px solid white;
 }
+
+/*# sourceMappingURL=outpur.css.map */
