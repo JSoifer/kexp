@@ -22,8 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 11.7rem;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .upper-header {
@@ -46,7 +46,7 @@ body {
 .upper-header .player .now-playing #np-artist {
   margin-bottom: 0;
 }
-.upper-header .header-tools {
+.upper-header .player .header-tools {
   position: absolute;
   top: 0;
   right: 10px;
@@ -58,22 +58,20 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
-
-.main-nav nav ul {
+.lower-header .main-nav nav ul {
   display: flex;
   list-style: none;
   align-content: center;
 }
-.main-nav nav ul li {
+.lower-header .main-nav nav ul li {
   margin-left: 25px;
 }
-
-.secondary-nav ul {
+.lower-header .secondary-nav ul {
   display: flex;
   list-style: none;
   margin-right: 25px;
 }
-.secondary-nav ul li {
+.lower-header .secondary-nav ul li {
   margin-left: 25px;
 }
 
@@ -83,9 +81,12 @@ body {
 }
 .beneath-header h2 {
   margin-left: 10px;
+  color: black;
 }
 
 .main-content {
+  margin-left: 8vw;
+  margin-left: 8vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +134,9 @@ body {
 .story img {
   height: 80px;
   width: 80px;
+}
+.story .story-text {
+  color: black;
 }
 
 #cover_art {
