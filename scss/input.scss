@@ -1,14 +1,6 @@
 //variables
 $accent-color: #ffad33;
 //mixins
-@mixin header-background {
-  display: block;
-  background-image: url("../img/cover_art.png");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  //filter: blur(5px);
-}
 
 
 * {
@@ -22,13 +14,23 @@ body {
 }
 
 
+.header-background {
+  display: block;
+  background-image: url("../img/cover_art.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  z-axis: -1;
+  //filter: blur(5px);
+}
 
 .main-header {
   display: flex;
   flex-direction: column;
   height: 11.7rem;
-  @include header-background;
-  background-color: grey;
+  //background-color: transparant;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 .upper-header {
   position: relative;
@@ -39,12 +41,16 @@ body {
     display: flex;
     align-content: center;
     .now-playing {
-      max-height: 80px;
-      margin-left: 5px;
+      margin-left: 10px;
       font-size: .85em;
-      margin-left: 20px;
     }
   }
+}
+#np-host {
+  margin-top: 0;
+}
+#np-artist {
+  margin-bottom: 0;
 }
 .header-tools {
   position: absolute;

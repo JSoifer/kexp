@@ -9,16 +9,21 @@ body {
   font-family: "M PLUS Rounded 1c" inherit, sans-serif;
 }
 
-.main-header {
-  display: flex;
-  flex-direction: column;
-  height: 11.7rem;
+.header-background {
   display: block;
   background-image: url("../img/cover_art.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: grey;
+  z-axis: -1;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  height: 11.7rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .upper-header {
@@ -32,10 +37,16 @@ body {
   align-content: center;
 }
 .upper-header .player .now-playing {
-  max-height: 80px;
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 0.85em;
-  margin-left: 20px;
+}
+
+#np-host {
+  margin-top: 0;
+}
+
+#np-artist {
+  margin-bottom: 0;
 }
 
 .header-tools {
