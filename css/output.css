@@ -46,7 +46,7 @@ body {
 .upper-header .player .now-playing #np-artist {
   margin-bottom: 0;
 }
-.upper-header .player .header-tools {
+.upper-header .header-tools {
   position: absolute;
   top: 0;
   right: 10px;
