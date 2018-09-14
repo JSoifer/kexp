@@ -92,4 +92,9 @@ body {
   margin-left: 25px;
 }
 
+.main-content {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=output.css.map */
