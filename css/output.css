@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   background-color: white;
   color: white;
   font-family: proxima-nova, Helvetica, Ariel, sans-serif;
@@ -93,8 +93,15 @@ body {
 }
 
 .main-content {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
+  display: inline;
+}
+
+.content-section-one {
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
 }
 
 /*# sourceMappingURL=output.css.map */
