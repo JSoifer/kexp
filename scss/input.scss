@@ -1,6 +1,18 @@
 //variables
 $accent-color: #feac31;
 //mixins
+@mixin media-row-style  {
+  display: flex;
+  .media-card {
+    height: 300px;
+    width: 298px;
+    img {
+      max-width: 400px;
+      max-height: 298px;
+      margin: 0;
+    }
+  }
+}
 
 
 * {
@@ -104,6 +116,17 @@ body {
   flex-direction:column;
 }
 .content-section-one {
-  display: inline;
+  display: flex;
   align-self: center;
+}
+.main-content-grid {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.media-row-one {
+  @include media-row-style;
+}
+.media-row-two {
+  @include media-row-style;
 }

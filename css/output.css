@@ -100,8 +100,40 @@ body {
 }
 
 .content-section-one {
-  display: inline;
+  display: flex;
   align-self: center;
+}
+
+.main-content-grid {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.media-row-one {
+  display: flex;
+}
+.media-row-one .media-card {
+  height: 300px;
+  width: 298px;
+}
+.media-row-one .media-card img {
+  max-width: 400px;
+  max-height: 298px;
+  margin: 0;
+}
+
+.media-row-two {
+  display: flex;
+}
+.media-row-two .media-card {
+  height: 300px;
+  width: 298px;
+}
+.media-row-two .media-card img {
+  max-width: 400px;
+  max-height: 298px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=output.css.map */
