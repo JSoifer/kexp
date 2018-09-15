@@ -99,11 +99,11 @@ body {
 }
 .main-content {
   max-width: 1600px;
-  margin: 0 auto;
-  display: inline;
+  margin: 0 2vw 0 2vw;
+  display: flex;
+  flex-direction:column;
 }
 .content-section-one {
-  display: flex;
-  justify-content: flex-start;
-  margin: auto;
+  display: inline;
+  align-self: center;
 }
