@@ -127,8 +127,32 @@ body {
 }
 .main-content-grid {
   display: flex;
-  //flex-wrap: wrap;
   justify-content: center;
   margin-left: 0;
   margin-right: 0;
+  .media-row {
+  @include media-row-style;
+  width: calc(99.9% * 14/18 - (0rem - 0rem * 14/18));
+  flex-flow: row wrap;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  }
+}
+.sidebar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: calc(99.9% * 4/18 - (0rem - 0rem * 4/18));
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+.story {
+  img {
+    max-width: 98px;
+    max-height: 98px;
+
+  }
 }
