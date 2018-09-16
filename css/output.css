@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -94,15 +95,15 @@ body {
 
 .main-content {
   max-width: 1600px;
-  margin: 0 2vw 0 2vw;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 1rem;
 }
 
 .content-section-one {
   position: relative;
   display: flex;
-  align-self: center;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=output.css.map */
