@@ -4,6 +4,7 @@ $accent-color: #feac31;
 @mixin media-row-style  {
   display: flex;
   .media-card {
+    margin: 0 auto;
     height: 300px;
     width: 298px;
     img {
@@ -113,20 +114,10 @@ body {
   max-width: 1600px;
   margin: 0 2vw 0 2vw;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 .content-section-one {
+  position: relative;
   display: flex;
   align-self: center;
-}
-.main-content-grid {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-}
-.media-row-one {
-  @include media-row-style;
-}
-.media-row-two {
-  @include media-row-style;
 }
