@@ -95,6 +95,7 @@ body {
 
 .main-content {
   max-width: 1600px;
+  width: 100vw;
   margin: 0 auto;
   position: relative;
   padding: 2rem 1rem;
@@ -103,7 +104,10 @@ body {
 .content-section-one {
   position: relative;
   display: flex;
-  margin: 0 auto;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 -0.5rem 0 -5rem;
 }
 
 /*# sourceMappingURL=output.css.map */
