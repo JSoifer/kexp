@@ -1,13 +1,12 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
   width: 100vw;
   background-color: white;
   color: white;
-  font-family: proxima-nova, Helvetica, Ariel, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header-background {
@@ -222,6 +221,7 @@ body {
   display: flex;
   justify-content: center;
   color: black;
+  font-size: 1.2em;
 }
 .text-banner h2 {
   margin-left: 0.5em;
@@ -229,6 +229,11 @@ body {
 .text-banner h2:nth-of-type(3) {
   color: #feac31;
   text-decoration: underline;
+}
+
+.ad-banner {
+  width: 50rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=output.css.map */
